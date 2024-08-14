@@ -26,5 +26,15 @@ def create(name):
 cli.add_command(list)
 cli.add_command(create)
 
+@click.command()
+@click.argument('name')
+@click.argument('command')
+def run(name, command):
+    API_TOKEN = utils.get_api_token(name)
+    if API_TOKEN is None:
+        click.echo(f'API token for {name} not found')
+        return
+    click.echo(f'Running {command} for {name} with API token {API_TOKEN}')
+
 if __name__ == '__main__':
     cli()

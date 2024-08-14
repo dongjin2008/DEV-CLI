@@ -1,0 +1,30 @@
+{
+  "commands": {
+    "linear": {
+      "base_url": "https://api.linear.app/v1/",
+
+      "get_projects":{
+        "path": "projects",
+        "method": "GET"
+      },
+
+      "get_projects1":{
+        "path": "projects",
+        "method": "GET"
+      }
+    },
+    "linear2": {
+      "base_url": "https://api.linear.app/v1/",
+
+      "get_projects":{
+        "path": "projects",
+        "method": "GET"
+      },
+
+      "get_projects1":{
+        "path": "projects",
+        "method": "GET"
+      }
+    }
+  }
+}
